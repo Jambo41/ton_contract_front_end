@@ -1,15 +1,13 @@
 import "./App.css";
-import { TonConnectButton, useTonAddress } from "@tonconnect/ui-react";
+import { TonConnectButton } from "@tonconnect/ui-react"; //, useTonAddress 
 import { useMainContract } from "./hooks/useMainContract";
 import { useTonConnect } from "./hooks/useTonConnect";
 import { fromNano } from "ton-core";
 
-function App() {
+function App() { // recent_sender,owner_address,
   const {
     contract_address,
     counter_value,
-    recent_sender,
-    owner_address,
     contract_balance,
     SendIncrement,
     sendDeposit,

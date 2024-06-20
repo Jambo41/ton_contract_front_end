@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { MainContract } from "../contracts/MainContract";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
-import { toNano, fromNano } from "ton-core";
+import { toNano } from "ton-core"; //, fromNano
 import { useTonConnect } from "./useTonConnect";
 
 import { Address, OpenedContract } from "ton-core";
