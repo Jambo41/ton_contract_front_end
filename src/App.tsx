@@ -20,7 +20,16 @@ function App() { // recent_sender,owner_address,
 const { connected } = useTonConnect();
 
 const showAlert = () => {
-  WebApp.showAlert("Hey there!");
+  const themeParams = WebApp.themeParams;
+  const themeSettings = `
+    Background Color: ${themeParams.bg_color}
+    Text Color: ${themeParams.text_color}
+    Hint Color: ${themeParams.hint_color}
+    Link Color: ${themeParams.link_color}
+    Button Color: ${themeParams.button_color}
+    Button Text Color: ${themeParams.button_text_color}
+  `;
+  WebApp.showAlert(themeSettings);
 
 }
 
@@ -48,7 +57,7 @@ const showAlert = () => {
         <a onClick={() => {
                 showAlert();
               }}>
-              Show Alert
+              Show Theme Settings
             </a>
 
           <br/>
