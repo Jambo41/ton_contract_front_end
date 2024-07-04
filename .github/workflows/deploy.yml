@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - medro
 
 jobs:
   build:

@@ -6,7 +6,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react';
 
 // this manifest is used temporarily for development purposes
 const manifestUrl =
-"https://Jambo41.github.io/ton_contract_front_end/tonconnect-manifest.json"
+"https://Jambo41.github.io/Medro/tonconnect-manifest.json"
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
